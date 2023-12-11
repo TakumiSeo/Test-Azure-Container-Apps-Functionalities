@@ -17,7 +17,7 @@ Azure Container Apps では 最小のコードまたはコードなしで外部�
 今回の Hands on では事前登録済みの Github アカウントを利用して、事前にデプロイしたアプリケーションのセキュリティを強化します。</br>
 ここでは [Github にアプリケーションを登録する](https://learn.microsoft.com/ja-jp/azure/container-apps/authentication-github)を参照します。</br>
 ### 機能のアーキテクチャ
-認証と認可のコンポーネントは買うkレプリカの上でコンテナーとして実行されます。つまり全ての HTTP 要求はアプリケーションにたどり着く前にセキュリティ レイヤーを通過します。
+認証と認可のコンポーネントは各レプリカの上でコンテナーとして実行されます。つまり全ての HTTP 要求はアプリケーションにたどり着く前にセキュリティ レイヤーを通過します。
 <BR>
 <BR>
 <img width="501" alt="ScreenShot" src="assets/212139.png">
