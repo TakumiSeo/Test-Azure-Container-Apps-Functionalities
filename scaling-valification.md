@@ -1,10 +1,10 @@
 # Azure Container Apps のスケーリングの検証
-ここでは、Azure Container Apps にデプロイされているアプリケーションのスケーリング機能を実験的に体験します。
+ここでは、Azure Container Apps にデプロイされているアプリケーションのスケーリング機能を実験的に体験します。</br>
 またスケーリング設定の際の注意点も兼ねて記述しています。
 
 ## 1.事前準備
-Azure ポータルで CLI を開くか、PowerShell を利用して操作します。
-PowerShell を用いる場合、ご自身のサブスクリプションを以下に従って紐づけてください。
+Azure ポータルで CLI を開くか、PowerShell を利用して操作します。</br>
+Local で PowerShell を用いる場合、ご自身のサブスクリプションを以下に従って紐づけてください。
 >本番環境にデプロイしないように必ず注意してください。
 ```
 # Azure にログイン
@@ -16,7 +16,7 @@ az account show
 # もし異なる場合
 az account set --subscription [SubscriptionId] 
 ```
-CLI 用の Azure Container Apps の拡張機能をインストールまたは更新します。
+CLI 用の Azure Container Apps の拡張機能をインストールまたは更新します。</br>
 また必要な名前空間を登録していきます。
 ```
 # Azure Container Apps の拡張機能をインストール
@@ -40,7 +40,7 @@ az provider register --namespace Microsoft.App
 # Microsoft.OperationInsights が登録されていない場合
 az provider register --namespace Microsoft.OperationInsights
 ```
->[Azure のプロバイダー](https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/management/azure-services-resource-providers)は特定の Azure サービスの機能を有効にする REST 操作セットを指します。 例えば、Key Vault サービスは Microsoft .KeyVault という名前空間のリソースプロバイダーで構成されています。
+>[Azure のプロバイダー](https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/management/azure-services-resource-providers)は特定の Azure サービスの機能を有効にする REST 操作セットを指します。</br> 例えば、Key Vault サービスは Microsoft .KeyVault という名前空間のリソースプロバイダーで構成されています。
 
 ## スケールルールを追加する
 az containerapp update コマンドを実行して, コンテナー アプリにHTTP スケール ルールを追加します。
@@ -270,8 +270,3 @@ $ResponseTime.TotalSeconds
 レプリカの最小数が 1 として設定されたことにより、約 1.58 秒と待機時間が軽減されたことが確認できました。</br>
 
 スケーリングの検証は以上です。
-
-
-
-
-

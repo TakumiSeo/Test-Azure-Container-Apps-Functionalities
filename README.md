@@ -3,7 +3,7 @@
 + 記載の内容については、2023年12月時点の環境をベースとしています。
 + 参考
  + Azure Container Apps [スケーリング機能](https://learn.microsoft.com/ja-jp/azure/container-apps/scale-app?pivots=azure-cli#http)
- + Azure Container Apps [認証機能](https://learn.microsoft.com/ja-jp/azure/container-apps/authentication)
+ + Azure Container Apps [認証と認可の機能](https://learn.microsoft.com/ja-jp/azure/container-apps/authentication)
 + **なお、こちらに記載の内容はあくまでサンプルとなりますので、ご注意ください。**
 
 ## 前提条件
@@ -24,4 +24,4 @@
 ## アジェンダ
 + [事前準備](README.md)
 + [スケーリングの検証](scaling-valification.md)
-+ [認証機能の検証](authentication-valification.md)
++ [認証と認可の機能の検証](authentication-valification.md)
