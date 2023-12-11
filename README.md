@@ -2,8 +2,8 @@
 こちらはAzure Container Apps のスケーリング機能と認証機能に関しての Hands on になります。
 + 記載の内容については、2023年12月時点の環境をベースとしています。
 + 参考
- + Azure Container Apps [スケーリング機能](https://learn.microsoft.com/ja-jp/azure/container-apps/scale-app?pivots=azure-cli#http)
- + Azure Container Apps [認証と認可の機能](https://learn.microsoft.com/ja-jp/azure/container-apps/authentication)
+ ++ Azure Container Apps [スケーリング機能](https://learn.microsoft.com/ja-jp/azure/container-apps/scale-app?pivots=azure-cli#http)
+ ++ Azure Container Apps [認証と認可の機能](https://learn.microsoft.com/ja-jp/azure/container-apps/authentication)
 + **なお、こちらに記載の内容はあくまでサンプルとなりますので、ご注意ください。**
 
 ## 前提条件
