@@ -10,7 +10,7 @@
 | ---- | ---- | ---- |
 |  Hands on 用 Azure Subscription 準備  |  [Azure の無料アカウント](https://azure.microsoft.com/ja-jp/free/)より新規作成 | |
 |  Github アカウントの準備  |  アカウントが存在しない場合： [Github Top ページの Sign up for GitHub](https://github.com/) より新規作成  | 認証機能を Github を用いて追加します |
-|  デプロイ済みの Azure Container Apps | サンプルアプリの作り方は[こちら](https://learn.microsoft.com/ja-jp/azure/container-apps/tutorial-deploy-first-app-cli?tabs=bash)を参考にしてください | 任意の事前に準備した Container Apps に機能を追加してい |
+|  デプロイ済みの Azure Container Apps | サンプルアプリの作り方は[こちら](https://learn.microsoft.com/ja-jp/azure/container-apps/tutorial-deploy-first-app-cli?tabs=bash)を参考にしてください | 任意の事前に準備した Azure Container Apps に機能を追加していきます |
 <!-- + Hands on 用 Azure Subscription 準備
   + 参考： [Azure の無料アカウント](https://azure.microsoft.com/ja-jp/free/)より新規作成
 + Github アカウントの準備
