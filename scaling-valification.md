@@ -32,7 +32,7 @@ az provider list --query "[?namespace=='Microsoft.App' || namespace=='Microsoft.
 |   Microsoft.App   | Registered |
 | Microsoft.OperationalInsights  | Registered |
 
-ここで NotRegistered の Provider に対しては以下のコマンドを実行してください
+ここで NotRegistered の Provider に対しては以下のコマンドを実行してください。
 ```
 # Microsoft.App が登録されていない場合
 az provider register --namespace Microsoft.App
