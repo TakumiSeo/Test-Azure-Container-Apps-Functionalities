@@ -20,7 +20,7 @@ Azure Container Apps では 最小のコードまたはコードなしで外部�
 認証と認可のコンポーネントは買うkレプリカの上でコンテナーとして実行されます。つまり全ての HTTP 要求はアプリケーションにたどり着く前にセキュリティ レイヤーを通過します。
 <BR>
 <BR>
-<img width="501" alt="ScreenShot" src="assets/212139.png">
+<img width="501" alt="ScreenShot" src="assets/212004.png">
 <BR>
 <BR>
 このプラットフォーム ミドルウェアは以下の処理をアプリに対して行います。
