@@ -16,6 +16,7 @@ Azure Container Apps では 最小のコードまたはコードなしで外部�
 
 ## 機能のアーキテクチャと検証
 ### 機能のアーキテクチャ
+<<<<<<< HEAD
 認証と認可のコンポーネントはサイドカー パターンとして認証ミドルウェアがアプリケーションと同じレプリカ内にデプロイされます。 つまり全ての HTTP 要求はアプリケーションにたどり着く前にセキュリティ レイヤーを通過します。
 > 似た仕様として [Azure App Service の認証機能](https://learn.microsoft.com/ja-jp/azure/app-service/overview-authentication-authorization#feature-architecture)があります。この場合はアプリケーションと同一の仮想マシン内に作成されます。
 
@@ -24,6 +25,12 @@ Azure Container Apps では 最小のコードまたはコードなしで外部�
 <BR>
 <BR>
 <img width="501" alt="ScreenShot" src="assets/112203.png">
+=======
+認証と認可のコンポーネントは各レプリカの上でコンテナーとして実行されます。つまり全ての HTTP 要求はアプリケーションにたどり着く前にセキュリティ レイヤーを通過します。
+<BR>
+<BR>
+<img width="501" alt="ScreenShot" src="assets/212004.png">
+>>>>>>> e5bf521234fe32d3e4ee0cbc1cec6653a73a1947
 <BR>
 <BR>
 このプラットフォーム ミドルウェアは以下の処理をアプリに対して行います。
@@ -145,6 +152,7 @@ ID プロバイダーの追加が対象のアプリケーションにおいて�
 <BR>
 <BR>
 
+<<<<<<< HEAD
 サポートされているアカウントの種類で「任意の Microsoft Entra ディレクトリと個人用 Microsoft アカウント」を選択したため、個人用のアカウントでログインすることができました。</br>
 X-MS-CLIENT-* の 4 つのヘッダーが追加されていることが確認でき、ログインに使用したメールアドレス、プロバイダー (aad) を確認することができます。
 
@@ -237,3 +245,7 @@ Log in with Google を選択し、 Google でログインします。
 <BR>
 
 Azure Container Apps の認証の機能の検証は以上です。
+=======
+認証を終えると、通常のアプリケーションの画面に遷移します。</br>
+認証と認可の検証は以上です。
+>>>>>>> e5bf521234fe32d3e4ee0cbc1cec6653a73a1947

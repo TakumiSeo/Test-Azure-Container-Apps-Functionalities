@@ -32,7 +32,7 @@ az provider list --query "[?namespace=='Microsoft.App' || namespace=='Microsoft.
 |   Microsoft.App   | Registered |
 | Microsoft.OperationalInsights  | Registered |
 
-ここで NotRegistered の Provider に対しては以下のコマンドを実行してください
+ここで NotRegistered の Provider に対しては以下のコマンドを実行してください。
 ```
 # Microsoft.App が登録されていない場合
 az provider register --namespace Microsoft.App
@@ -131,7 +131,7 @@ az containerapp logs show `
 ## リクエストの送信
 初めに Azure Portal にてレプリカとメトリックを確認し、リクエストを送る前の状態を確認します。</br>
 手順
-+ Azure Portal 状の Container Apps の監視/メトリックを開きます
++ Azure Portal 上の Container Apps の監視/メトリックを開きます
 + メトリックで Requests を選択します
 + 時間の範囲を 「過去 30 分」かつ時間の粒度を「1 分」とします
 + 「分割を適用する」を選択します
@@ -154,7 +154,7 @@ az containerapp logs show `
 
 > こちらの画像では過去にテストとしてレプリカ数を増やしているため、いくつかのレプリカが既にメトリックに表示されています。
 
-ここから自身のアプリケーションに 10 個の要求の非同期バッチで、50 個の要求をコンテナー アプリに送信します。
+ここから PowerShell より、自身のアプリケーションに 10 個の要求の非同期バッチで、50 個の要求をコンテナー アプリに送信します。
 ```
 $Runspace = [runspacefactory]::CreateRunspacePool(1,10)
 $Runspace.Open()
